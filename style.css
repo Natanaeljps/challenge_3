@@ -1,0 +1,132 @@
+/*==Variables==*/
+:root {
+  /*Color*/
+  --dark-cyan-color: hsl(185, 75%, 39%);
+  --very-blue-color: hsl(229, 23%, 23%);
+  --dark-blue-color: hsl(227, 10%, 46%);
+  --dark-gray-color: hsl(0, 0%, 59%);
+
+  /*Fonts*/
+  --title-font: 700 1.125rem 'Kumbh Sans', sans-serif;
+  --text-font: 400 1rem 'Kumbh Sans', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--dark-cyan-color);
+  background-image: url(./images/bg-pattern-bottom.svg);
+
+  background-position-y: -90%;
+  background-position-x: 150%;
+  background-size: 60rem;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  position: absolute;
+  top: -30rem;
+  right: 47rem;
+}
+
+main {
+  background-color: white;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-top: 125px;
+  margin-left: 600px;
+  position: absolute;
+  text-align: center;
+  position: relative;
+
+  height: 100%;
+}
+
+figure img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+div.img-user img {
+  clip-path: circle();
+  margin-top: 0.5rem;
+}
+
+#white {
+  position: relative;
+  background: white;
+  height: 110px;
+  clip-path: circle();
+
+  top: -3.6rem;
+}
+
+.title {
+  font: var(--title-font);
+}
+
+.text {
+  font: var(--text-font);
+  line-height: 1.7rem;
+}
+
+h2 {
+  color: var(--dark-gray-color);
+}
+
+span {
+  color: var(--very-blue-color);
+}
+
+.container #card {
+  display: flex;
+}
+
+#card {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+#name-age {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+/*========MEDIA QUERIES========*/
+/* EXTRA LARGE DEVICES: > 375 */
+@media (min-width: 375px) {
+  html {
+    background-color: var(--dark-cyan-color);
+    background-image: url(./images/bg-pattern-bottom.svg);
+
+    background-position-y: -150%;
+    background-position-x: -35%;
+    background-size: 51rem;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    display: flex;
+    position: absolute;
+    top: -30rem;
+    right: 10rem;
+  }
+
+  main {
+    background-color: white;
+    border-radius: 1rem;
+    display: inline-block;
+
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 8rem;
+
+    position: absolute;
+    text-align: center;
+    position: relative;
+  }
+}
